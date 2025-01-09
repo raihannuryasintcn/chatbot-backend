@@ -1,0 +1,20 @@
+# Python dependencies
+venv/
+__pycache__/
+logs/
+
+# Environment files
+*.env
+*.env.local
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE or Editor specific files
+.idea/
+*.swp
+
+# General log files
+*.log
+
