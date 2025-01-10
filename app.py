@@ -164,7 +164,7 @@ def chat():
             )
             status = "no_match"
 
-        time.sleep(1.5)
+        time.sleep(0.5)
         
         logging.info(f"Status: {status}, Similarity: {similarity_score:.2f}, Response: {response[:100]}...")
         
