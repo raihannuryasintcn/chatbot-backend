@@ -78,8 +78,15 @@ def preprocess_text(text):
         text = ' '.join(text.split())
         tokens = tokenize_text(text)
         
-        stopwords = {'yang', 'di', 'ke', 'dari', 'pada', 'dalam', 'untuk', 'dengan', 'dan', 'atau', 
-                    'ini', 'itu', 'juga', 'sudah', 'saya', 'anda', 'dia', 'mereka', 'kita', 'akan'}
+        stopwords = {'yang', 'di', 'ke', 'dari', 'pada', 'dalam', 'untuk', 'dengan', 'dan', 'atau', 'ini', 'itu', 
+        'saya', 'kamu', 'dia', 'mereka', 'kami', 'kita', 'apa', 'siapa', 'mengapa', 'bagaimana', 
+        'bila', 'jika', 'karena', 'sehingga', 'adalah', 'seperti', 'tentang', 'tetapi', 'bukan', 
+        'lagi', 'sudah', 'belum', 'akan', 'ingin', 'masih', 'harus', 'dapat', 'bisa', 'ada', 'tidak', 
+        'bukan', 'saja', 'hanya', 'oleh', 'pun', 'sebuah', 'itu', 'ini', 'tersebut', 'tersebutlah', 
+        'mungkin', 'bahwa', 'agar', 'hingga', 'dalam', 'antara', 'tanpa', 'selama', 'sebelum', 
+        'sesudah', 'sesuai', 'daripada', 'seperti', 'seolah', 'namun', 'bahkan', 'walau', 'meskipun', 
+        'sedangkan', 'kemudian', 'lalu', 'selain', 'sementara', 'setelah', 'demikian', 'sebab', 
+        'olehkarena', 'maupun', 'juga', 'dimana', 'kapan', 'seperti', 'sehingga', 'yaitu'}       
         
         tokens = [token for token in tokens if token not in stopwords]
         processed_text = ' '.join(tokens)
